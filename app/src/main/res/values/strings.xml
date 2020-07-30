@@ -1,0 +1,23 @@
+<resources>
+	<string name="app_name">Ипотечный калькулятор</string>
+	<string name="Amount">Сумма</string>
+	<string name="interest">Ставка</string>
+	<string name="period">Период</string>
+	<string name="calculate">Расчет</string>
+	<string name="inputError">Введите корректные данные</string>
+	<string name="paymentBtn">Платежи</string>
+	<string name="chart_amount">Сумма займа</string>
+	<string name="credit_owerpay">Переплата</string>
+	<string name="Pays">Платежи</string>
+	<string name="more">Дополнительно</string>
+	<string name="insurance">Страховка Недвижимости</string>
+	<string name="valuation">Оценка Недвижимости</string>
+	<string name="info1">Расходы</string>
+	<string name="BigTitle">Расчет ипотеки методом Аннуитета</string>
+
+	<string-array name="mat_cap">
+		<item>Нет</item>
+		<item>Первый ребенок</item>
+		<item>Второй ребенок</item>
+	</string-array>
+</resources>

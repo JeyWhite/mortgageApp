@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity"
+	android:orientation="vertical"
+	android:background="@color/background">
+
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_gravity="center"
+		android:layout_margin="10dp">
+		<TextView
+			android:background="@color/colorPrimaryDark"
+			android:padding="10dp"
+			android:text="@string/BigTitle"
+			android:textAlignment="center"
+			android:textColor="@color/colorAccent"
+			android:textSize="40dp"
+			android:layout_gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:orientation="vertical"
+		style="@style/TextAppearance.AppCompat.Body1"
+		android:layout_gravity="center"
+		android:background="#ffffff"
+		android:layout_margin="10dp"
+		>
+		<com.google.android.material.textfield.TextInputLayout
+
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:hint="@string/Amount"
+			android:layout_gravity="center"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+			app:helperTextEnabled="true"
+			app:helperText="Общая стоимость недвижимости">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/amountInput"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="numberDecimal"
+				/>
+
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:hint="@string/interest"
+			android:layout_gravity="center"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+			app:helperTextEnabled="true"
+			app:helperText="Процентная ставка ипотеки">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/interestInput"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="numberDecimal"
+				/>
+
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_gravity="center">
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:layout_width="0dp"
+				android:layout_weight="3"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:hint="@string/period"
+				android:layout_gravity="center"
+				style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+				app:helperTextEnabled="true"
+				app:helperText="Cрок, на который берется ипотека">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/periodInput"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="numberDecimal"
+					/>
+
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<ToggleButton
+				android:id="@+id/PeriodType"
+				style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginEnd="10dp"
+				android:textOn="Лет"
+				android:textOff="Мес."
+				android:tint="#121212"
+				android:backgroundTint="@color/colorPrimaryDark" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_gravity="center_horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:layout_gravity="center"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:orientation="vertical">
+
+				<Button
+					android:id="@+id/loses_go_to"
+					style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_margin="10dp"
+					android:text="+"
+					android:textSize="30dp"
+					android:tint="#FFFFFF"
+					app:backgroundTint="@color/colorPrimary"
+					app:srcCompat="@android:drawable/ic_input_add"
+					/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_gravity="center"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:orientation="vertical">
+
+				<Button
+					android:id="@+id/calculate"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="10dp"
+					android:layout_gravity="center"
+					android:text="@string/calculate"
+					android:textSize="30dp"
+					style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+					app:backgroundTint="@color/colorPrimary" />
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
